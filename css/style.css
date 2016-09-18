@@ -1,27 +1,27 @@
-/*font-family: 'Shadows Into Light', cursive;
+/*
+ font-family: 'Shadows Into Light', cursive;
  font-family: 'Indie Flower', cursive;
 */
 
+/*Estilo para dibujar el marco de la pagina total	*/
 #contenidos{
-	width: 1000px;
-	height: auto;
+	width: 1000px; /*ancho de pagina  mil pixceles*/
+	height: auto;  /*Ancho automatico para el ancho se automatico*/
 	margin: auto;
-	position: relative;
-	
-
+	position: relative; /*Posicion relativa*/
+	background: yellow ;
 }
-
 
 /*ETIQUETAS*/
 body{
-background-image: url(../img/fondo.jpg);
-background-repeat: no-repeat;
-background-size: cover;
+	background-image: url(../img/fondo.jpg);
+	background-repeat: no-repeat;
+	background-size: cover; /*Ajusta imagen a todo el fondo*/
 }
 
 h1{
 font-family: 'Shadows Into Light', cursive;
-color: white;
+color: red;
 margin-left: 10px;
 font-size: 60px;
 text-align: center; 
@@ -29,33 +29,26 @@ text-align: center;
 
 h2{
 font-family: 'Indie Flower', cursive;
-color: white;
+color: black;
 margin-left: 10px;
 font-size: 20px;
 text-align: left; 
 }
 
-h3{
-font-family: 'Shadows Into Light', cursive;;
-color: white;
-font-size: 30px;
-text-align: center; 
-}
-
-
 header{
 	width: 1000px;
 	height: 120 px;
-	background: rgba(255, 255, 255, 10,70);
+	background: rgba(0, 255, 0, 0.3);  /* green with opacity */
 }
 
+/*Contorno de o caja pora los menus*/
 nav{
-width: 1000px;
-height: 50px;
-background: red;
-border-radius: 10px;
-
+	width: 1000px;
+	height: 50px;
+	background: red;
+	border-radius: 10px; /* esquinas curvas en la barra del nav*/
 }
+
 ul{
 margin: auto;
 padding-top: 4px;
@@ -65,44 +58,35 @@ li{
 	float: left;
 	list-style-type: none;
 	padding: 10px;
-	background: black;
-	margin: 3px;
-	border-radius: 10px;
-	box-shadow: 0 0 10px white inset; 
-
-}
-
-section{
-	width: 700px;
-	background: gray;
-	height: 600px;
-	float: left;
-	margin-top: 20px;
-	border-radius: 10px;
-}
-aside{
-
-	width: 280px;
 	background: white;
-	height: 600px;
-	float: left;
-	margin-left: 20px;
-	margin-top: 20px;
-	border-radius: 10px;
+	margin: 3px;
+	border-radius: 10px; 
+	box-shadow: 0 0 10px black inset; /*sombra del boton*/
 }
 
-footer{
-width: 1000px;
-height: 70px;
-background: maroon;
-float: left;
-margin-top: 20px;
-border-radius: 10px;
-margin-bottom: 20px;
+/*Ancho de menu de barra de navegacion*/
+
+/*CLASES*/
+/*1- Ancho de menu*/
+.ancho_menu_home{width: 900px;}
+/*2 - ancho menu paginas*/
+.ancho_menu_paginas{width: 970px;}
+/*3 - colores de los botones, segun los eventos-Activo y quita el subrayado*/
+.menu:link {padding: 7px; color: white; text-decoration: none;}
+/*4 - colores de los botones, evento visitado*/
+.menu:visited {padding: 7px;color: white; text-decoration: none;}
+/*5 - colores de los botones, evento visitado*/
+
+.menu:hover {padding: 7px;color: white; text-decoration: none; text-shadow: 0 0 13px white;} /*resalta el color de los textos*/
+
+.menu:active {color: white; text-decoration: none;}
+
+/*seudoclase para que muestre el texto mas resaltado*/
+li:hover{
+	background: rgba(0, 255, 0, 0.8);  /* green with opacity */
 }
 
-p{
-
+p {
 	font-size: 15px;
 	font-weight: bolder;
 	line-height: 24px;
@@ -110,34 +94,41 @@ p{
 	text-align: justify;
 }
 
+/*Css para section*/
+section{
+	width: 700px;
+	background: white;
+	height: 600px;
+	float: left; /*porcion de contenido*/
+	border-radius: 10px; 
+}
 
+aside {
+	width: 280px;
+	background: white;	
+	height: 600px;  /*igual de alto del section que*/
+    float: left;  /*Alinea de forma horizontal y hacial la izquierda*/
+    /*separacion el borde del aside del section */
+    margin-left: 20px ;
+    /*borde redondeado*/ 
+    border-radius: 10px; 
+}
 
+/*Configuracion pie de pagina*/
+footer {
+	width: 1000px; /*mismo ancho de contenedor principal*/
+	height: 60px; /*Para un a linea de texto*/
+    background: rgba(255, 0, 0, 0.4);
+    float: left;
+    margin-top: 10px; /*para que se separa el piede pagina*/
+     /*borde redondeado*/ 
+    border-radius: 10px; 
+}
 
-/*CLASES*/
-
-.ancho_menu_home{width: 900px;}
-.ancho_menu_paginas{width: 970px;}
-
-.menu:link{color: white; text-decoration: none;}
-.menu:visited{color: white; text-decoration: none;}
-.menu:hover{color: white; text-decoration: none; text-shadow: 0 0 13px white;}
-.menu:active{color: white; text-decoration: none;}
-
-/*SEUDO CLASES*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*titulo del pie de pagina*/
+h3{
+font-family: 'Shadows Into Light', cursive;;
+color: white;
+font-size: 20px;
+text-align: center; 
+}
