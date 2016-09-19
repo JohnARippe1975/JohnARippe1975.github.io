@@ -39,14 +39,6 @@ font-size: 20px;
 text-align: left; 
 }
 
-.txt_pie {
-
-	font-family: 'Shadows Into Light', cursive;;
-	color: white;
-	font-size: 25px;
-	text-align: center;
-	padding: 0px;
-}
 
 
 header{
@@ -165,10 +157,23 @@ footer {
      /*borde redondeado*/ 
     border-radius: 10px; 
     padding: 0px;
+
 }
 /*Imagen del pie de pagina*/
-.cert{
+/*clase con punto*/
+/*ID con #*/
+#cert{
 	float:right;
+}
+
+#txt_pie {
+
+	font-family: 'Shadows Into Light', cursive;;
+	color: white;
+	font-size: 15px;
+	text-align: center;
+	padding: 0px;
+	padding-right: 5px;
 }
 
 
