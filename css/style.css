@@ -8,20 +8,24 @@
 	width: 1000px; /*ancho de pagina  mil pixceles*/
 	height: auto;  /*Ancho automatico para el ancho se automatico*/
 	margin: auto;
+	top:auto;
 	position: relative; /*Posicion relativa*/
-	background: yellow ;
+	border-radius: 10px; /* esquinas curvas en la barra del nav*/
+	background: white ;
 }
 
 /*ETIQUETAS*/
 body{
-	background-image: url(../img/fondo.jpg);
+	/*background-image: url(../img/fondo.jpg);
 	background-repeat: no-repeat;
-	background-size: cover; /*Ajusta imagen a todo el fondo*/
+	background-size: 100% 100%; /*Ajusta imagen a todo el fondo*/
+	background-color: #006680; /*Azul institucional*/
+
 }
 
 h1{
 font-family: 'Shadows Into Light', cursive;
-color: red;
+color: #F2880D;  /*Color institucional*/
 margin-left: 10px;
 font-size: 60px;
 text-align: center; 
@@ -35,18 +39,36 @@ font-size: 20px;
 text-align: left; 
 }
 
-header{
-	width: 1000px;
-	height: 120 px;
-	background: rgba(0, 255, 0, 0.3);  /* green with opacity */
+.txt_pie {
+
+	font-family: 'Shadows Into Light', cursive;;
+	color: white;
+	font-size: 25px;
+	text-align: center;
+	padding: 0px;
 }
 
-/*Contorno de o caja pora los menus*/
-nav{
+
+header{
+	width: 1000px;
+	height: 110px;
+	/*background: rgba(0, 255, 0, 0.3);   green with opacity */
+	/*background-color: #ff5900;*/
+	background-color: white;
+	border-radius: 10px; /* esquinas curvas en la barra del nav*/
+}
+
+/*Ancho y alto de la caja para los menus*/
+nav {
 	width: 1000px;
 	height: 50px;
-	background: red;
+		/*background-color: #ff5900;/*Color institucional UNAD beig*/
+	background-color: 	#F2880D;/*Color institucional UNAD beig*/
 	border-radius: 10px; /* esquinas curvas en la barra del nav*/
+}
+nav ul li a{
+	text-decoration: none; /*Quita subrayado  de todos los botones dentro del nav opciones*/
+	color: blue; /*color letra de botones*/
 }
 
 ul{
@@ -68,7 +90,7 @@ li{
 
 /*CLASES*/
 /*1- Ancho de menu*/
-.ancho_menu_home{width: 900px;}
+.ancho_menu_home{width: 1000px;}
 /*2 - ancho menu paginas*/
 .ancho_menu_paginas{width: 970px;}
 /*3 - colores de los botones, segun los eventos-Activo y quita el subrayado*/
@@ -84,9 +106,16 @@ li{
 /*seudoclase para que muestre el texto mas resaltado*/
 li:hover{
 	background: rgba(0, 255, 0, 0.8);  /* green with opacity */
+	background-color: #006680; /*Azul institucional UNAD*/
+	background-color: #F2880D;/*beige claro institucional UNAD*/ 
+	
+}
+li a:hover{
+	color: white;/*Color de la letra boton cuando el mouse pasa encima*/
 }
 
 p {
+	color: white; /*color letra dela seccion*/
 	font-size: 15px;
 	font-weight: bolder;
 	line-height: 24px;
@@ -94,41 +123,53 @@ p {
 	text-align: justify;
 }
 
-/*Css para section*/
-section{
-	width: 700px;
-	background: white;
-	height: 600px;
-	float: left; /*porcion de contenido*/
-	border-radius: 10px; 
-}
-
+/*Contenerdor barra lateral izquierda*/
 aside {
 	width: 280px;
 	background: white;	
-	height: 600px;  /*igual de alto del section que*/
+	height: 550px;  /*igual de alto del section que*/
     float: left;  /*Alinea de forma horizontal y hacial la izquierda*/
     /*separacion el borde del aside del section */
-    margin-left: 20px ;
+    margin-right: 5px ;
     /*borde redondeado*/ 
     border-radius: 10px; 
 }
+
+.ul{
+
+	position: absolute;/*Escribe en linea*/
+	display: inline-block;
+	
+}
+/*Css para section*/
+section{
+	width: 715px;
+	background: white;
+	background-image: url(../img/Iniciosecction.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%; /*Ajusta imagen a todo el fondo*/
+	height: 550px;
+	float: left; /*porcion de contenido*/
+	border-radius: 10px; 
+	
+}
+
 
 /*Configuracion pie de pagina*/
 footer {
 	width: 1000px; /*mismo ancho de contenedor principal*/
 	height: 60px; /*Para un a linea de texto*/
-    background: rgba(255, 0, 0, 0.4);
+    background: #F2880D; /*Color Institucional*/
     float: left;
-    margin-top: 10px; /*para que se separa el piede pagina*/
+    margin-top: 5px; /*para que se separa el piede pagina*/
      /*borde redondeado*/ 
     border-radius: 10px; 
+    padding: 0px;
+}
+/*Imagen del pie de pagina*/
+.cert{
+	float:right;
 }
 
+
 /*titulo del pie de pagina*/
-h3{
-font-family: 'Shadows Into Light', cursive;;
-color: white;
-font-size: 20px;
-text-align: center; 
-}
